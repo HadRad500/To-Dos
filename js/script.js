@@ -1,5 +1,6 @@
 function newItem(){
 
+   let list = $('#list');
    let li = $('<li></li>');
    let inputValue = $('#input').val();
    li.append(inputValue);
@@ -10,11 +11,11 @@ function newItem(){
     $('#list').append(li);
   }}
     function crossOut() {
-        li.toggleClass("strike");  
+        li.toggleClass('strike');  
   };
 
     li.on("dblclick", function crossOut() {
-    li.toggleClass("strike");
+    li.toggleClass('strike');
 
   })
 
